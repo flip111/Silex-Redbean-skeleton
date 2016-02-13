@@ -1,0 +1,15 @@
+{% block timepicker_widget %}
+    {% set attr = attr|merge({class: (attr.class|default('') ~ ' form-control')|trim}) %}
+    <input type="text" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+    <script>
+$('#{{form.vars.id}}').datetimepicker({
+  timeFormat: '{{form.vars.time_format}}'
+{% if form.vars.date_format is not empty %}
+  ,dateFormat: '{{form.vars.date_format}}'
+  ,seperator: '{{form.vars.seperator}}'
+{% else %}
+  ,timeOnly: true
+{% endif %}
+});
+    </script>
+{% endblock %}

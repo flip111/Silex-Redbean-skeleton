@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% block title %}{{app['route.name']|capitalize}}{% endblock %} &bull; Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ app.request_context.baseUrl }}/css/bootstrap.min.css">
+    <style>
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ app.request_context.baseUrl }}/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.3/jquery-ui-timepicker-addon.min.css">
+    <link rel="stylesheet" href="{{ app.request_context.baseUrl }}/css/main.css">
+
+    <script src="{{ app.request_context.baseUrl }}/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.3/jquery-ui-sliderAccess.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.3/jquery-ui-timepicker-addon.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ app.request_context.baseUrl }}/">Website</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          {% for route_name in app.routes.all|keys %}
+            {% if route_name|slice(0,9) != '_profiler' and route_name|slice(0,4) != '_wdt' %}
+          <ul class="nav navbar-nav">
+            <li{% if app['route.name'] == route_name %} class="active"{% endif %}><a href="{{ url(route_name) }}">{{route_name|capitalize}}</a></li>
+          </ul>
+            {% endif %}
+          {% endfor %}
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>{% block header %}{{app['route.name']|capitalize}}{% endblock %}</h1>
+      {% block body %}{% endblock %}
+      <footer>
+        <p>&copy; Website</p>
+      </footer>
+    </div> <!-- /container -->      
+
+    <script src="{{ app.request_context.baseUrl }}/js/vendor/bootstrap.min.js"></script>
+    <script src="{{ app.request_context.baseUrl }}/js/main.js"></script>
+
+  </body>
+</html>

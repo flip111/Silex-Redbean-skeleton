@@ -1,0 +1,12 @@
+{% extends 'main.html.twig' %}
+
+{% block body %}
+<div class="well">
+  {{form(form)}}
+  <ul>
+  {% for todo in todos %}
+    <li>{{todo.time}} - {{todo.text}}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

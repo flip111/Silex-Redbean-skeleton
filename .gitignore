@@ -1,0 +1,4 @@
+app.log
+cache
+vendor
+database.sqlite

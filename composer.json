@@ -1,0 +1,24 @@
+{
+  "require": {
+    "silex/silex": "dev-master",
+    "gabordemooij/redbean": "dev-master",
+    "monolog/monolog": "dev-master",
+    "twig/twig": "dev-master",
+    "symfony/form": "dev-master",
+    "symfony/validator": "dev-master",
+    "symfony/serializer": "dev-master",
+    "silex/web-profiler": "dev-master",
+    "jeromemacias/silex-debug": "dev-master",
+    "symfony/config": "dev-master",
+    "symfony/security-csrf": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "src/Model/"
+    ],
+    "psr-4": {
+      "ExampleVendor\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
