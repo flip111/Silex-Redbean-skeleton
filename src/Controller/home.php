@@ -7,10 +7,9 @@ use ExampleVendor\Form\Type\TimePickerType;
 
 $app->match('/', function (Request $request) use ($app) {
   // make a form
-  $bla = TimePickerType::class;
   $emptyForm = $app['form.factory']->createBuilder()
     ->add('todo', F\TextType::class)
-    ->add('time', $bla)
+    ->add('time', TimePickerType::class)
     ->add('save', F\SubmitType::class)
     ->getForm();
 

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2dccb315f8606c09bd138727595fe312",
-    "content-hash": "d3cae5998c2872c47c2b191f3a9ca361",
+    "hash": "2e9447fe938ba6e56cdf13b4a75922fb",
+    "content-hash": "2d5cc06a81c7d66d9381d15d2dc36d83",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -1479,12 +1479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "de0e58f6d0617b6390f77747b25043f8fe155376"
+                "reference": "b46271400c8917d94ec3fa19421363542de302c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/de0e58f6d0617b6390f77747b25043f8fe155376",
-                "reference": "de0e58f6d0617b6390f77747b25043f8fe155376",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/b46271400c8917d94ec3fa19421363542de302c3",
+                "reference": "b46271400c8917d94ec3fa19421363542de302c3",
                 "shasum": ""
             },
             "require": {
@@ -1497,7 +1497,7 @@
                 "symfony/event-dispatcher": "~2.8|~3.0",
                 "symfony/expression-language": "~2.8|~3.0",
                 "symfony/http-foundation": "~2.8|~3.0",
-                "symfony/ldap": "~2.8|~3.0.0",
+                "symfony/ldap": "~3.1",
                 "symfony/validator": "~2.8|~3.0"
             },
             "suggest": {
@@ -1537,7 +1537,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2016-02-04 12:57:09"
+            "time": "2016-02-11 17:54:23"
         },
         {
             "name": "symfony/security-csrf",
@@ -2133,6 +2133,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo_sqlite": "*"
+    },
     "platform-dev": []
 }

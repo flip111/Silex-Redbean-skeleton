@@ -1,5 +1,6 @@
 {
   "require": {
+    "ext-pdo_sqlite": "*",
     "silex/silex": "dev-master",
     "gabordemooij/redbean": "dev-master",
     "monolog/monolog": "dev-master",
