@@ -62,6 +62,10 @@ As you might have noticed there is no section so far about any database. The def
 
 Redbean configures your database on the fly. This is a huge benefit in development speed, but it also means that you can not use an existing schema. If you need to use existing data then first model the data with redbean on an empty database and then write queries to load your data in the redbean schema.
 
+# FAQ #
+Q: Failed to listen on localhost:8080 (reason: An attempt was made to access a socket in a way forbidden by its access permission)
+A: Try using another port than `8080`
+
 # Todo #
 * Update frontend code (made by http://www.initializr.com/) last update was at 19-9-2014
 * Add more widgets (Redbean, Select2)

@@ -1,7 +1,6 @@
 <?php
 use RedBeanPHP\R;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Form\Extension\Core\Type as F;
 use ExampleVendor\Form\Type\TimePickerType;
 

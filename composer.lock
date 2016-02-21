@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e9447fe938ba6e56cdf13b4a75922fb",
-    "content-hash": "2d5cc06a81c7d66d9381d15d2dc36d83",
+    "hash": "0d02a9a5d0885b7ea8c02167a79a369d",
+    "content-hash": "f62b7aeafb83e19aa9562e3077f7cb7e",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -93,21 +93,21 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f656375b86f7065b708f1fd7db99d7923915853d"
+                "reference": "79817af0de141a2278e54acd01fb2532a7548516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f656375b86f7065b708f1fd7db99d7923915853d",
-                "reference": "f656375b86f7065b708f1fd7db99d7923915853d",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/79817af0de141a2278e54acd01fb2532a7548516",
+                "reference": "79817af0de141a2278e54acd01fb2532a7548516",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
-                "psr/log": "^1.0"
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
             },
             "provide": {
                 "psr/log-implementation": "1.0.0"
@@ -118,7 +118,8 @@
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
                 "php-console/php-console": "^3.1.3",
-                "phpunit/phpunit": "^5.0",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
                 "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "swiftmailer/swiftmailer": "~5.3",
@@ -166,7 +167,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-12-22 20:52:47"
+            "time": "2016-01-22 18:13:50"
         },
         {
             "name": "paragonie/random_compat",
@@ -449,17 +450,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "ee48cd9eb9f807a6a6e8ab51dbc9e0d6d6e0062a"
+                "reference": "4f9c94a6c632cdd01f62b08f6ff10744630b1959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/ee48cd9eb9f807a6a6e8ab51dbc9e0d6d6e0062a",
-                "reference": "ee48cd9eb9f807a6a6e8ab51dbc9e0d6d6e0062a",
+                "url": "https://api.github.com/repos/symfony/config/zipball/4f9c94a6c632cdd01f62b08f6ff10744630b1959",
+                "reference": "4f9c94a6c632cdd01f62b08f6ff10744630b1959",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
                 "symfony/filesystem": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/yaml": "To use the yaml reference dumper"
             },
             "type": "library",
             "extra": {
@@ -491,7 +495,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-04 14:47:41"
+            "time": "2016-02-18 09:00:40"
         },
         {
             "name": "symfony/debug",
@@ -726,12 +730,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "089d2d5e4089e3ca3ec9c7c3d7ff1d13885a5843"
+                "reference": "677ffc1de5ad3e8196142fc31867feba08cccb8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/089d2d5e4089e3ca3ec9c7c3d7ff1d13885a5843",
-                "reference": "089d2d5e4089e3ca3ec9c7c3d7ff1d13885a5843",
+                "url": "https://api.github.com/repos/symfony/form/zipball/677ffc1de5ad3e8196142fc31867feba08cccb8c",
+                "reference": "677ffc1de5ad3e8196142fc31867feba08cccb8c",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +796,7 @@
             ],
             "description": "Symfony Form Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-13 09:24:02"
+            "time": "2016-02-18 14:03:27"
         },
         {
             "name": "symfony/http-foundation",
@@ -800,12 +804,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "51fa7c87a8f138411c9352e8160f551c2b99bce6"
+                "reference": "5465abe3fcb34bdbccfe216b02a073ab38c22663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/51fa7c87a8f138411c9352e8160f551c2b99bce6",
-                "reference": "51fa7c87a8f138411c9352e8160f551c2b99bce6",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5465abe3fcb34bdbccfe216b02a073ab38c22663",
+                "reference": "5465abe3fcb34bdbccfe216b02a073ab38c22663",
                 "shasum": ""
             },
             "require": {
@@ -844,7 +848,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-13 09:23:44"
+            "time": "2016-02-18 09:00:02"
         },
         {
             "name": "symfony/http-kernel",
@@ -852,12 +856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "808698f919c7e99b6239f10d091006d14aee1bfa"
+                "reference": "806c32a97ceb27b45e6cc58b7c55d55101212421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/808698f919c7e99b6239f10d091006d14aee1bfa",
-                "reference": "808698f919c7e99b6239f10d091006d14aee1bfa",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/806c32a97ceb27b45e6cc58b7c55d55101212421",
+                "reference": "806c32a97ceb27b45e6cc58b7c55d55101212421",
                 "shasum": ""
             },
             "require": {
@@ -926,7 +930,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-13 09:23:44"
+            "time": "2016-02-17 06:14:35"
         },
         {
             "name": "symfony/intl",
@@ -1063,17 +1067,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-icu.git",
-                "reference": "66b0bb4abda229bc073eff6bbc8f2685bdaac165"
+                "reference": "3392ea0037a4bf9230b81363145776e4fdce66a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-icu/zipball/66b0bb4abda229bc073eff6bbc8f2685bdaac165",
-                "reference": "66b0bb4abda229bc073eff6bbc8f2685bdaac165",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-icu/zipball/3392ea0037a4bf9230b81363145776e4fdce66a9",
+                "reference": "3392ea0037a4bf9230b81363145776e4fdce66a9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3|~3.0"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
             },
             "type": "library",
             "extra": {
@@ -1110,7 +1117,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-01-20 09:13:37"
+            "time": "2016-02-15 04:08:08"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1783,12 +1790,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "16abd04255cb6777adad3bd7f4625dc133415912"
+                "reference": "e6ec308974d2ebbf7ba428fd1c8b50adc293d8d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/16abd04255cb6777adad3bd7f4625dc133415912",
-                "reference": "16abd04255cb6777adad3bd7f4625dc133415912",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/e6ec308974d2ebbf7ba428fd1c8b50adc293d8d2",
+                "reference": "e6ec308974d2ebbf7ba428fd1c8b50adc293d8d2",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1863,7 @@
             ],
             "description": "Symfony Twig Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-02-05 11:35:50"
+            "time": "2016-02-16 06:11:42"
         },
         {
             "name": "symfony/validator",
@@ -1864,12 +1871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "0e75903184ebb86f997e984f389c02c4d26372a8"
+                "reference": "614a07c51007c4cbf3bf8b9753384809f7583e76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/0e75903184ebb86f997e984f389c02c4d26372a8",
-                "reference": "0e75903184ebb86f997e984f389c02c4d26372a8",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/614a07c51007c4cbf3bf8b9753384809f7583e76",
+                "reference": "614a07c51007c4cbf3bf8b9753384809f7583e76",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1936,7 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-13 09:24:02"
+            "time": "2016-02-16 08:48:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -2121,7 +2128,6 @@
     "stability-flags": {
         "silex/silex": 20,
         "gabordemooij/redbean": 20,
-        "monolog/monolog": 20,
         "twig/twig": 20,
         "symfony/form": 20,
         "symfony/validator": 20,

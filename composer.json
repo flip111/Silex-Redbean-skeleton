@@ -3,7 +3,7 @@
     "ext-pdo_sqlite": "*",
     "silex/silex": "dev-master",
     "gabordemooij/redbean": "dev-master",
-    "monolog/monolog": "dev-master",
+    "monolog/monolog": "1.*",
     "twig/twig": "dev-master",
     "symfony/form": "dev-master",
     "symfony/validator": "dev-master",
