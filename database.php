@@ -6,3 +6,4 @@ use RedBeanPHP\R;
  */
 define('REDBEAN_MODEL_PREFIX', '');
 R::setup('sqlite:'.__DIR__.'/database.sqlite');
+R::setAutoResolve(true);
